@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #485563;
+  background: -webkit-linear-gradient(to right, #29323c, #485563);
+  background: linear-gradient(to right, #29323c, #485563);
+}
+
+.svg {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.country {
+  fill: #ccc;
+  stroke: #222;
+  stroke-width: 0.5;
+}
+
+.tool {
+  background-color: #29323c;
+  border: white 1px solid;
+  display: none;
+  position: absolute;
+  padding: 10px;
+  border-radius: 3%;
+  color: white;
+  font-family: Consolas, courier;
+}
+
+ul {
+  list-style: none;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.active_country {
+  fill: lightyellow;
+}
