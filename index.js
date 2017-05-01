@@ -17,6 +17,8 @@ svg (all zoom based calls are listened here using .call function in this place)
 var zoom = d3.zoom().scaleExtent([1, 7]).on("zoom", draw);
 //call zoom on svg object where zoom is done
 svg.call(zoom);
+//set default pan
+svg.call(zoom.transform, d3.zoomIdentity.translate(0, 100));
 //define draw function which gets called everytime a zoom is done
 function draw() {
   underlying.attr("transform", d3.event.transform);
